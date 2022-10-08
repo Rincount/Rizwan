@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>TUGAS BASIS DATA &amp; M.IZWAN</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block navbar-klean" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"> <img class="me-3 d-inline-block" src="assets/img/gallery/ddd.png" alt="" /></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto pt-2 pt-lg-0 font-base">
+              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-medium active" aria-current="page" href="#home">Menginstall Wordpress</a></li>
+              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#database">Membuat database pisah</a></li>
+              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#query">Query Mysql</a></li>
+              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#acl">Acces Control List</a></li>
+              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#fundamental">Fundamentals</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="home">
+        <div class="bg-holder d-none d-md-block bg-size" style="background-image:url(assets/img/illustrations/hero.png);background-position:right bottom;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/heroheader-bg.png);background-position:center;background-size:contain;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
+              <h1 class="fw-bold display-4 fs-4 fs-lg-6 fs-xxl-7 text-gradient"> BASIS DATA</h1>
+              <h1 class="text-700">crafted by <span class="fw-bold"></span>M.izwan Kudus</h1>
+              <p class="mb-5 fs-0">NIM : 4332101020 <br class="d-none d-lg-block" />RKS Pagi-A</p><a class="btn hover-top btn-glow btn-klean" href="#home">Check Tugas</a>
+            </div>
+          </div>
+        </div>
+      </section>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+
+      <div class="container-xl">
+        <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+          <div class="col-auto">
+            <div class="square shadow-square-bottom">
+              <div class="card product-card-bg">
+                <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/1.jpg" width="350" alt="..." /></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+            <h1 class="fw-bold display-5 lh-sm my-4">Cara Penginstallan Database server dan Web server dalam 1 jaringan  </h1>
+            <p class="fs-1 mb-3 pe-xxl-8">Kita bisa menginstall xampp dan mendownload wordpress pack yang berupa ZIP.</p>
+            <p class="fs-1 mb-5 pe-xxl-8"> Pertama kita membuat database untuk webserver menggunakan layanan apache dan mysql dari aplikasi xampp</p>
+          </div>
+        </div>
+        <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+          <div class="col-auto ms-lg-auto order-md-1 text-center">
+            <div class="square shadow-square-top">
+              <div class="card product-card-bg">
+                <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/2.jpg" width="350" alt="..." /></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+            <h1 class="fw-bold display-5 lh-sm my-4">Dan kita membuat database webserver dengna cara mengakses url [localhost/pypmyadmin]</h1>
+            <p class="fs-1 mb-3 pe-xxl-8">Kemudian kita menambahkan database baru dengan nama wordpress</p>
+          </div>
+        </div>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div class="container-xl">
+        <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+          <div class="col-auto">
+            <div class="square shadow-square-bottom">
+              <div class="card product-card-bg">
+                <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/3.jpg" width="350" alt="..." /></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+            <h1 class="fw-bold display-5 lh-sm my-4">Setelah kita membuat web servernya kita harus mengekstrak</h1>
+            <p class="fs-1 mb-3 pe-xxl-8">File wordpress yang telah kita download kedalam aplikasi</p>
+            <p class="fs-1 mb-5 pe-xxl-8"> Xampp, di dalam file htdock</span></p>
+          </div>
+        </div>
+        <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+          <div class="col-auto ms-lg-auto order-md-1 text-center">
+            <div class="square shadow-square-top">
+              <div class="card product-card-bg">
+                <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/4.jpg" width="350" alt="..." /></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+            <h1 class="fw-bold display-5 lh-sm my-4">Dan Sekarang kita bisa mengakses wordpress dengan cara membuka</h1>
+            <p class="fs-1 mb-3 pe-xxl-8">url [localhost/wordpress] dan akan menampilkan halaman seperti ini</p>
+          </div>
+        </div>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div class="container-xl">
+        <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+          <div class="col-auto">
+            <div class="square shadow-square-bottom">
+              <div class="card product-card-bg">
+                <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/5.jpg" width="350" alt="..." /></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+            <h1 class="fw-bold display-5 lh-sm my-4">Jika sudah seperti ini brarti konfigurasi antara database server dan webserver sudah berhasil</h1>
+            <p class="fs-1 mb-3 pe-xxl-8">Dan berikut hasil web yang sudah saya buat, menggunakan wordpress pada localhost.</p>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <section class="py-5 circle-blend circle-blend-right-feature circle-cyan" id="database">
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/feature-bg.png);background-position:right;background-size:auto;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row justify-content-center mb-6">
+            <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">DATABASE</h5>
+              <p class="mb-0">Membuat Database Terpisah</p>
+            </div>
+          </div>
+         
+      <section>
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/product-bg-1.png);background-position:center;background-size:cover;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="bg-holder mt-n4" style="background-image:url(assets/img/illustrations/product-bg-2.png);background-position:left top;background-size:contain;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/6.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Set up system</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">(Gambar Topologi) </p>
+            </div>
+          </div>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/7.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">(Gambar Os Yang Digunakan Beserta Ipnya )</h1>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/8.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">(Gambar Set up Network Adapter Pada Masing-masing VmWare)</h1>
+            </div>
+          </div>
+          </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/9.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Set up Database-Server</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Pertama saya membuat database-server,menggunakan OS ubuntu-server pada vmware</p>
+              <p class="fs-1 mb-5 pe-xxl-8">Untuk database-server kita memerlukan tools seperti : apache2,</p>
+              <p class="fs-1 mb-5 pe-xxl-8">Kita bisa menggunakan perintah : sudo apt install apache2 -y</p>
+              <p class="fs-1 mb-5 pe-xxl-8">Setelah berhasil menginstall apache2 kita bisa mengecek service apache menggunakan perintah seperti di bawah ini</p>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/10.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">mysql-server</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">emudian kita mengistall juga mysql-server dengna perintah:
+                sudo apt install apache2 -y
+                </p>
+              <p class="fs-1 mb-5 pe-xxl-8">Setelah berhasil menginstall mysql-server kita bisa mengecek service apache menggunakan perintah seperti di bawah ini</p>
+            </div>
+          </div>
+          </div>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/11.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4"> juga php Versi 8.1.2</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">kemudian memeriksa versi php kita apakah sudah mendapatkan versi terbarunya</p>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/12.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Kemudian kita seting untuk menyambungkan konfigurasi antara database dan web server Menggunakan perintah [nano /etc/mysql/mysql.conf.d/mysqld.cnf]</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Dan kemudian mengganti default Bind-address ipnya menjadi ip database server, untuk menerima remote yang akan di kirimkan oleh user web-server nanti.</p>
+            </div>
+          </div>
+          </div>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/13.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Set up Web-Server <br>Untuk web-server kita membutuhkan tools seperti : apache2,</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Kita bisa menginstall apache2 Dengan perintah Seperti gambar di bawah ini</p>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/14.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">setelah itu kitab isa memeriksa apakah service apache nya sudah berjalan dengan perintah di bawah ini</h1>
+            </div>
+          </div>
+          </div>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/15.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">mysql-client </h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Setelah menginstall apache2 kita harus menginstall mysql-client untuk meremot server Database kita yang nanti akan kita konfigurasi ke Web-Server</p>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/16.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">php-mysql</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Kemudian kita juga perlu memeriksa Versi php pada Web-Server kita agar mendapatkan versi barunya</p>
+            </div>
+          </div>
+          </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/17.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Mengaman kan Web-Server agar tidak bisa di remote kita bisa menggunakan dan menyetingnya secara manual dengan  perintah : [mysql_secure_installation]</h1>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/18.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Konfigurasi Antara Database-server Dan Web-server</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Pertama kita masuk kedalam database server nysql menggunakan user root kemudian kita membuat user baru untuk web server</p>
+            </div>
+          </div>
+          </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/19.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Kita membuat User Baru Dengan perintah</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">[CREATE USER 'username'@'ip web server' IDENTIFIED BY 'password';]</p>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/20.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Kemudian kita memberikan privileges / hak istimewa untuk untuk user yang akan kita gunakan</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">[GRANT ALL PRIVILEGES ON *.* TO 'username'@'ip web server';]</p>
+            </div>
+          </div>
+          </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/21.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Kemudian kita merestart mysql database kita menggunakan perintah</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">[FLUSH PRIVILEGES;] Untuk Merestart Service pada mysql-server kita</p>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/22.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Sekarang kita mencoba Remote Database-Server kita menggunakan Web-Server dengan cara</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Memasukkan perintah [mysql -u user -h host ip/database server ip -p password]</p>
+            </div>
+          </div>
+          </div>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/23.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Jika sudah berhasil </h1>
+              <p class="fs-1 mb-3 pe-xxl-8">masuk ke dalam mysql database menggunakan web server dan memeriksa sambungannya.</p>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/24.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Jika sudah terhubung kita tinggal menginstall wordpressnya saja pada webserver</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Kita bisa mengecek versi dan koneksi php antara webserver dan database server menggunakan  http://[ ip web-sever ]/ php.info</p>
+            </div>
+          </div>
+          </div>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/25.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Menginstall Wordpress Menggunakan Web-Server.</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Pertama kita membuat Database dan usernya terlebih dahulu pada Web-Server yang akan di buat pada Mysql Database-Server</p>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/26.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Kemudian kita memberikan Hak akses istimewa menggunakan perintah Seperti di bawah ini</h1>
+            </div>
+          </div>
+          </div>
+          <br></br>
+          <br></br>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/27.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Lalu kita Restart Mysql Servicenya menggunakan perintah Sepperti di bawha ini,</h1>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/28.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Menginstall dan Konfigurasi Wordpress</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Kita dapat menginstall wordpress menggunakan perintah di bawah ini,</p>
+            </div>
+          </div>
+          </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/29.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Setelah berhasil </h1>
+              <p class="fs-1 mb-3 pe-xxl-8">kita mengkopi data wordpressnya dari direktori /tmp ke direktori /var/www/html, dengan perintah di bawah ini</p>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/30.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Kemudian kita ubah Hak akses dan kepemilikan dari direktori wordpress dengan perintah [chmod -R 755 /var/www/html/wordpress]</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Dan mengganti kepemilikkan direktorinya dengan perintah [chown -R www-data:www-data /var/www/html/wordpress/wp-content/uploads]</p>
+              <p class="fs-1 mb-5 pe-xxl-8"> Note : Perintah ini Digunakan untuk mengupload File Wordpress pada Web-Server agar bisa di tampilkan</p>
+              <p class="fs-1 mb-5 pe-xxl-8"> Setelah itu kita bisa Memerikasa wordpressnya dengan cara memasukan alamat
+                [https:// Database-Server ip/wordpress] Dan akan menampilkan laman seperti ini Sekarang kita Sudah Berhasil Mengistall wordpresnya.
+                </p>
+            </div>
+          </div>
+          </div>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/31.jpg" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">Setelah itu kita Tinggal membuat saja Akun Wordpressnya.</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-7">
+
+        <div class="container">
+          <section class="py-5 circle-blend circle-blend-right-feature circle-cyan" id="query">
+          <div class="bg-holder" style="background-image:url(assets/img/illustrations/project-bg.png);background-position:right;background-size:auto;">
+          </div>
+          <!--/.bg-holder-->
+
+          <div class="row justify-content-center circle-blend circle-blend-left-project circle-warning">
+            <div class="col-lg-6 text-center mx-auto mb-6">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">QUERY MYSQL</h5>
+              <p class="mb-0">Memberikan perintah ke database </p>
+            </div>
+            <div class="container-xl">
+              <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                <div class="col-auto">
+                  <div class="square shadow-square-bottom">
+                    <div class="card product-card-bg">
+                      <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/32.jpg" width="350" alt="..." /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                  <h1 class="fw-bold display-5 lh-sm my-4">Perintah Union pada mysql di gunakan untuk menggabungkan 2 hasil pencarian pada set database,</h1>
+                </div>
+              </div>
+              </div>
+              <br></br>
+              <br></br>
+              <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+                <div class="col-auto ms-lg-auto order-md-1 text-center">
+                  <div class="square shadow-square-top">
+                    <div class="card product-card-bg">
+                      <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/33.jpg" width="350" alt="..." /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                  <h1 class="fw-bold display-5 lh-sm my-4">Perintah Select pada mysql di gunakan untuk memilih colom pada table tertentu pada set database,</h1>
+                </div>
+              </div>
+            </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <div class="container-xl">
+              <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                <div class="col-auto">
+                  <div class="square shadow-square-bottom">
+                    <div class="card product-card-bg">
+                      <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/34.jpg" width="350" alt="..." /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                  <h1 class="fw-bold display-5 lh-sm my-4">Perintah Sleep pada mysql di gunakan untuk memeriksa kueri asinkron serta kueri yang berjalan lambat tertentu pada set database.</h1>
+                </div>
+              </div>
+              </div>
+      </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pb-0" container container-lg-fluid container-xl="container container-lg-fluid container-xl">
+
+        <div class="container">
+          <section class="py-5 circle-blend circle-blend-right-feature circle-cyan" id="acl">
+          <div class="bg-holder" style="background-image:url(assets/img/illustrations/team-bg.png);background-position:left top;background-size:auto;">
+          </div>
+          <!--/.bg-holder-->
+
+          <div class="row justify-content-center mb-6">
+            <div class="col-lg-6 text-center mx-auto mb-7">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">ACL</h5>
+              <p class="mb-0">Acces Control List</p>
+            </div>
+            <div class="container-xl">
+              <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                <div class="col-auto">
+                  <div class="square shadow-square-bottom">
+                    <div class="card product-card-bg">
+                      <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/35.jpeg" width="350" alt="..." /></div>
+                      <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/36.jpeg" width="350" alt="..." /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                  <h1 class="fw-bold display-5 lh-sm my-4">Mysql adalah sistem manajemen basisdata atau DBMS(Database management system) yang menggunakan perintah SQL (structured query language) untuk mengelola data informasi agar lebih terstruktur dan sistematis.</h1>
+                  <p class="fs-1 mb-3 pe-xxl-8">Pada dasarnya untuk mengatur keamanan pada database, maka tiap tiap pengguna harus memiliki akses kontrol terhadap database sesuai dengan porsi pengguna masing masing, baik dibatasi hanya dapat mengakses sebuah database tertentu, tabel tertentu, atau hanya kolom tertentu saja. Pada Mysql terdapat tingkatan level hak akses, seperti hak akses global, hak akses level database, hak akses level table, hak akses level kolom.</p>
+                  <h1 class="fw-bold display-5 lh-sm my-4">Command Pemberian Hak Akses (Privileges)</h1>
+                  <p class="fs-1 mb-3 pe-xxl-8">GRANT jenis_hak ON nama_database.nama_table TO 'user'@'host';</p>
+                  <p class="fs-1 mb-3 pe-xxl-8">Perintah GRANT merupakan perintah untuk memberikan hak akses bagi user di MySql agar dapat mengakses database,tabel, hingga kolom/field.</p>
+                </div>
+              </div>
+              </div>
+              <br></br>
+              <br></br>
+              <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+                <div class="col-auto ms-lg-auto order-md-1 text-center">
+                  <div class="square shadow-square-top">
+                    <div class="card product-card-bg">
+                      <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/37.jpg" width="350" alt="..." /></div>\
+                      <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/38.jpg" width="350" alt="..." /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                  <h1 class="fw-bold display-5 lh-sm my-4">Implementasi Pemberian Hak Akses</h1>
+                  <p class="fs-1 mb-3 pe-xxl-8">Dalam implementasi ini saya akan menggunakan daabase dengan nama judulfilm, dengan table sebagai berikut.</p>
+                  <p class="fs-1 mb-3 pe-xxl-8">Dengan Data Pada Setiap tiap tablenya</p>
+                </div>
+              </div>
+              </div>
+              <div class="container-xl">
+                <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                  <div class="col-auto">
+                    <div class="square shadow-square-bottom">
+                      <div class="card product-card-bg">
+                        <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/39.jpg" width="350" alt="..." /></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                    <h1 class="fw-bold display-5 lh-sm my-4">Implementasi.1</h1>
+                    <p class="fs-1 mb-3 pe-xxl-8">Dengan memberikan semua hak Akses pada user namun hanya bisa mengakses satu jenis table saja dalam satu database.</p>
+                  </div>
+                </div>
+                </div>
+                <br></br>
+                <br></br>
+                <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+                  <div class="col-auto ms-lg-auto order-md-1 text-center">
+                    <div class="square shadow-square-top">
+                      <div class="card product-card-bg">
+                        <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/40.jpg" width="350" alt="..." /></div>
+                        <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/41.jpg" width="350" alt="..." /></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                    <h1 class="fw-bold display-5 lh-sm my-4">Sehingga user staff hanya memiliki 1 full hak akses  field table saja pada database judulfilm yaitu movie. </h1>
+                  </div>
+                </div>
+                </div>
+                <div class="container-xl">
+                  <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                    <div class="col-auto">
+                      <div class="square shadow-square-bottom">
+                        <div class="card product-card-bg">
+                          <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/42.jpg" width="350" alt="..." /></div>
+                          <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/43.jpg" width="350" alt="..." /></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                      <h1 class="fw-bold display-5 lh-sm my-4">Grant Akses Staff1 .1</h1>
+                      <p class="fs-1 mb-3 pe-xxl-8">Staff1 menambahkan data pada table Movie
+                        Alter tables movie add location char(10) after studioname;</p>
+                    </div>
+                  </div>
+                  </div>
+                  <br></br>
+                  <br></br>
+                  <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+                    <div class="col-auto ms-lg-auto order-md-1 text-center">
+                      <div class="square shadow-square-top">
+                        <div class="card product-card-bg">
+                          <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/44.jpg" width="350" alt="..." /></div>
+                          <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/45.jpg" width="350" alt="..." /></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                      <h1 class="fw-bold display-5 lh-sm my-4">Grant Akses Staff1 .2</h1>
+                      <p class="fs-1 mb-3 pe-xxl-8">Staff1 menambahkan dan mengganti data field pada table Movie dikarenakan staff memiliki akses terhadap table tersebut.</p>
+                      <p class="fs-1 mb-3 pe-xxl-8">Update movie set location = ‘bulan/Batam’ where title = ‘apollo 13’;</p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="container-xl">
+                    <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                      <div class="col-auto">
+                        <div class="square shadow-square-bottom">
+                          <div class="card product-card-bg">
+                            <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/46.jpg" width="350" alt="..." /></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                        <h1 class="fw-bold display-5 lh-sm my-4">Grant Akses Staff1 .3</h1>
+                        <p class="fs-1 mb-3 pe-xxl-8">Staff1 melihat data pada data base
+                          Show databases; </p>
+                          <p class="fs-1 mb-3 pe-xxl-8">Staff1 tidak dapat melihat data pada database schema_information  di karenakan staff1 hanya memiliki akses ke satu table saja, yaitu table movie</p>
+                      </div>
+                    </div>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+                      <div class="col-auto ms-lg-auto order-md-1 text-center">
+                        <div class="square shadow-square-top">
+                          <div class="card product-card-bg">
+                            <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/47.jpg" width="350" alt="..." /></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                        <h1 class="fw-bold display-5 lh-sm my-4">Implementasi.2</h1>
+                        <p class="fs-1 mb-3 pe-xxl-8">Dengan staff2 ini hanya bisa view database, table, field, dan bisa menambahakan data namun tidak untuk mengubah data</p>
+                        <p class="fs-1 mb-3 pe-xxl-8">GRANT SELECT, INSERT ON judulfilm.* TO staff2@localhost;</p>
+                      </div>
+                    </div>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div class="container-xl">
+                      <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                        <div class="col-auto">
+                          <div class="square shadow-square-bottom">
+                            <div class="card product-card-bg">
+                              <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/48.jpg" width="350" alt="..." /></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                          <h1 class="fw-bold display-5 lh-sm my-4">Berikut table yang bisa di akses oleh staff2</h1>
+                        </div>
+                      </div>
+                      </div>
+                      <br></br>
+                      <br></br>
+                      <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+                        <div class="col-auto ms-lg-auto order-md-1 text-center">
+                          <div class="square shadow-square-top">
+                            <div class="card product-card-bg">
+                              <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/49.jpg" width="350" alt="..." /></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                          <h1 class="fw-bold display-5 lh-sm my-4">Grant Akses Staff2 .1</h1>
+                          <p class="fs-1 mb-3 pe-xxl-8">Staff2 melihat data pada table Movie dan StarsIn dimana title dan MovieTitle sama.
+                            SELECT * FROM Movie,StarsIN WHERE title=MovieTitle LIMIT 10;</p>
+                        </div>
+                      </div>
+                      </div>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <div class="container-xl">
+                        <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                          <div class="col-auto">
+                            <div class="square shadow-square-bottom">
+                              <div class="card product-card-bg">
+                                <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/50.jpg" width="350" alt="..." /></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                            <h1 class="fw-bold display-5 lh-sm my-4">Grant Akses Staff2 .2</h1>
+                            <p class="fs-1 mb-3 pe-xxl-8">Staff2 menambahkan data pada table Movie
+                              INSERT INTO Studio (name, address, pres) VALUES ('LodonComunity', 'Batam.id', 'Sir.Hikmah');</p>
+                          </div>
+                        </div>
+                        </div>
+                        <br></br>
+                        <br></br>
+                        <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+                          <div class="col-auto ms-lg-auto order-md-1 text-center">
+                            <div class="square shadow-square-top">
+                              <div class="card product-card-bg">
+                                <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/51.jpg" width="350" alt="..." /></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                            <h1 class="fw-bold display-5 lh-sm my-4">Grant Akses Staff2 .3</h1>
+                            <p class="fs-1 mb-3 pe-xxl-8">Mengganti data field/kolom birthplace pada table MovieStar
+                              UPDATE MovieStar SET name='Sir.hikmah' where name='bob gunton’;</p>
+                              <p class="fs-1 mb-3 pe-xxl-8">Tidak bisa dilakukan perintah mengubah data (UPDATE) karena tidak menjadi bagian hak akses/Privileges dari Staff2.</p>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="container-xl">
+                          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                            <div class="col-auto">
+                              <div class="square shadow-square-bottom">
+                                <div class="card product-card-bg">
+                                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/52.jpg" width="350" alt="..." /></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                              <h1 class="fw-bold display-5 lh-sm my-4">Implementasi.3 </h1>
+                              <p class="fs-1 mb-3 pe-xxl-8">Staff3 hanya bisa mengedit data dalam beberapa kolom/field tertentu pada table tertentu.
+                                GRANT SELECT(name,gender), UPDATE(birthplace) ON judulfilm.MovieStar TO Staff3@localhost;</p>
+                            </div>
+                          </div>
+                          </div>
+                          <br></br>
+                          <br></br>
+                          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+                            <div class="col-auto ms-lg-auto order-md-1 text-center">
+                              <div class="square shadow-square-top">
+                                <div class="card product-card-bg">
+                                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/53.jpg" width="350" alt="..." /></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                              <h1 class="fw-bold display-5 lh-sm my-4">Grant Akses Staff3 .1</h1>
+                              <p class="fs-1 mb-3 pe-xxl-8">Staff3 dapat melihat semua data pada table MovieStar
+                                SELECT * FROM MovieStar;</p>
+                            </div>
+                          </div>
+                          </div>
+                          <br></br>
+                          <br></br>
+                          <br></br>
+                          <br></br>
+                          <br></br>
+                          <br></br>
+                          <br></br>
+                          <div class="container-xl">
+                            <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                              <div class="col-auto">
+                                <div class="square shadow-square-bottom">
+                                  <div class="card product-card-bg">
+                                    <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/54.jpg" width="350" alt="..." /></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                                <h1 class="fw-bold display-5 lh-sm my-4">Perintah ini tidak bisa dilakukan karena hak akses yang di berikan untuk staff3 pada hak SELECT hanya untuk field name dan gender, seperti berikut.
+                                  SELECT name,gender FROM MovieStar LIMIT 4;</h1>
+                              </div>
+                            </div>
+                            </div>
+                            <br></br>
+                            <br></br>
+                            <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+                              <div class="col-auto ms-lg-auto order-md-1 text-center">
+                                <div class="square shadow-square-top">
+                                  <div class="card product-card-bg">
+                                    <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/55.jpg" width="350" alt="..." /></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                                <h1 class="fw-bold display-5 lh-sm my-4">Grant Akses Staff3 .2</h1>
+                                <p class="fs-1 mb-3 pe-xxl-8">Staff3 mencoba untuk update data filed name dengan table MovieStar
+                                  UPDATE MovieStar SET name='sir.hikmah' WHERE name='Bob Gunton';</p>
+                              </div>
+                            </div>
+                            </div>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <div class="container-xl">
+                              <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                                <div class="col-auto">
+                                  <div class="square shadow-square-bottom">
+                                    <div class="card product-card-bg">
+                                      <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/56.jpg" width="350" alt="..." /></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                                  <h1 class="fw-bold display-5 lh-sm my-4">bisa dilaksanakan karena Staff3 hanya memiliki hak UPDATE pada field birthplace saja pada MovieStar. Agar bisa berfungsi staff3 hanya bisa update pada field birthplace di table MovieStar
+                                    UPDATE MovieStar SET birthplace='Batam' WHERE name='Al pacino';</h1>
+                                </div>
+                              </div>
+                              </div>
+                              <br></br>
+                              <br></br>
+                              <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+                                <div class="col-auto ms-lg-auto order-md-1 text-center">
+                                  <div class="square shadow-square-top">
+                                    <div class="card product-card-bg">
+                                      <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/57.jpg" width="350" alt="..." /></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                                  <h1 class="fw-bold display-5 lh-sm my-4">Grant Akses Staff3 .3</h1>
+                                  <p class="fs-1 mb-3 pe-xxl-8">user3 menghapus data pada table StarsIn
+                                    DROP TABLE Studio;.</p>
+                                    <p class="fs-1 mb-3 pe-xxl-8">Tidak bisa dilakukan karena user3 hanya memiliki akses ke table MovieStar saja dan hak akses DROP tidak diberikan.</p>
+                                </div>
+                              </div>
+                              </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <section class="py-5" id="testimonial">
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/testimonial-bg-1.png);background-position:center;background-size:cover;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/testimonial-bg.png);background-position:right top;background-size:auto;margin-top:-43px;margin-left:-200px;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container-xxl">
+          <section class="py-5 circle-blend circle-blend-right-feature circle-cyan" id="fundamental">
+          <div class="row">
+            <div class="col-lg-6 mx-auto text-center mb-6">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">FUNDAMENTAL</h5>
+              <p class="mb-0">Acces Control</p>
+            </div>
+          </div>
+          <div class="container-xl">
+            <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+              <div class="col-auto">
+                <div class="square shadow-square-bottom">
+                  <div class="card product-card-bg">
+                    <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/58.jpg" width="350" alt="..." /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                <h1 class="fw-bold display-5 lh-sm my-4">Pada keamanan informasi, kontrol akses merupakan hal yang  penting untuk memastikan kerahasiaan, integritas dan ketersediaan (CIA). Mengontrol siapa saja yang dapat mengakses ke sistem dan luasnya akses yang bisa dimiliki oleh pengguna dan sangat penting untuk memastikan dan mengamankan sistem dan data.</h1>
+                <p class="fs-1 mb-3 pe-xxl-8">Contohnya seperti user root dapat memberikan atau membuat user yang dapat mengakses ke database kepada host yang diizinkan dan hak akses yang diberikan.</p>
+                <p class="fs-1 mb-3 pe-xxl-8">Contoh Pemberian Hak Akses Yang Sama seperti user Root Pada StaffR Untuk Mengakses Database.</p>
+                <p class="fs-1 mb-3 pe-xxl-8">Pembuattan User Baru</p>
+              </div>
+            </div>
+            </div>
+            <br></br>
+            <br></br>
+            <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+              <div class="col-auto ms-lg-auto order-md-1 text-center">
+                <div class="square shadow-square-top">
+                  <div class="card product-card-bg">
+                    <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/59.jpg" width="350" alt="..." /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                <h1 class="fw-bold display-5 lh-sm my-4">Pemberian Hak Akses Dengan Perintah Grant All (.*) Memberikan Hak akses Pada Seluruh Tabel Yang Berada Dalam Database.</h1>
+              </div>
+            </div>
+            </div>
+            <div class="container-xl">
+              <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                <div class="col-auto">
+                  <div class="square shadow-square-bottom">
+                    <div class="card product-card-bg">
+                      <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/60.jpg" width="350" alt="..." /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                  <h1 class="fw-bold display-5 lh-sm my-4">Pembuktian Jika StaffR Hanya Bisa mengakses Databases yang di berikan Aksesnya saja  Serta Perbandingan antara </h1>
+                  <p class="fs-1 mb-3 pe-xxl-8">User Root Dengan StaffR</p>
+                  <p class="fs-1 mb-3 pe-xxl-8">Root </p>
+                </div>
+              </div>
+              </div>
+              <br></br>
+              <br></br>
+              <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+                <div class="col-auto ms-lg-auto order-md-1 text-center">
+                  <div class="square shadow-square-top">
+                    <div class="card product-card-bg">
+                      <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/61.jpg" width="350" alt="..." /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                  <h1 class="fw-bold display-5 lh-sm my-4">StaffR</h1>
+                </div>
+              </div>
+              </div>
+              <div class="container-xl">
+                <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                  <div class="col-auto">
+                    <div class="square shadow-square-bottom">
+                      <div class="card product-card-bg">
+                        <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/62.jpg" width="350" alt="..." /></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                    <h1 class="fw-bold display-5 lh-sm my-4">Dikarenakan saya memberikan semua hak akses kepada StaffR, jadi untuk perintah create,read,update, dan delete bisa dijalankan oleh StaffR Layaknya user Root</h1>
+                  </div>
+                </div>
+                </div>
+                <br></br>
+                <br></br>
+                <div class="container-xxl">
+                  <div class="row">
+                    <div class="col-lg-6 mx-auto text-center mb-6">
+                      <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">MANDATORY</h5>
+                      <p class="mb-0">Acces Control</p>
+                    </div>
+                  </div>
+                <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+                  <div class="col-auto ms-lg-auto order-md-1 text-center">
+                    <div class="square shadow-square-top">
+                      <div class="card product-card-bg">
+                        <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/63.jpg" width="350" alt="..." /></div>
+                        <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/64.jpg" width="350" alt="..." /></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+                    <h1 class="fw-bold display-5 lh-sm my-4">Pada kemanan komputer Mandatory (wajib) Access Control (MAC) merupakan jenis akses kontrol dimana sistem operasi atau pada database yang membatasi kemampuan subjek atau inisiator (user) untuk mengakses atau pada umumnya melakukan operasi pada objek atau target biasanya pada database objeknya adalah tabel, kolom, tampilan dan lainnya. Pada dasarnya keamanan ini dikendalikan secara terpusat oleh administrator yang mengelola keamanan, jadi user lain tidak memiliki kemampuan untuk mengganti kebijakan.</h1>
+                    <p class="fs-1 mb-3 pe-xxl-8">Semisalnya user yang tidak bisa mengakses database atau table yang telah ditentukan. Hanya root user yang bisa mengganti kebijakan. </p>
+                    <p class="fs-1 mb-3 pe-xxl-8">Dengan perintahnya sebagai berikut. </p>
+                    <p class="fs-1 mb-3 pe-xxl-8">StaffR1 </p>
+                  </div>
+                </div>
+                </div>
+                <div class="container-xl">
+                  <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+                    <div class="col-auto">
+                      <div class="square shadow-square-bottom">
+                        <div class="card product-card-bg">
+                          <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/gallery/65.jpg" width="350" alt="..." /></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+                      <h1 class="fw-bold display-5 lh-sm my-4">Dalam Akses ini StaffR1 hanya bisa menggunakan perintah SELECT pada setiap tabel di database judulfilm;</h1>
+                      <p class="fs-1 mb-3 pe-xxl-8">StaffR2 </p>
+                      <p class="fs-1 mb-3 pe-xxl-8">Dalam Akses ini StaffR2 hanya bisa menggunakan perintah SELECT pada table studio di database judulfilm; </p>
+
+                    </div>
+                  </div>
+                  </div>
+      </section>
+      <section
+              <p class="fs--1 my-2 fw-bold">All rights Reserved &copy; RIZWAN, 2022</p>
+   
+      </section>
+
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/feather-icons/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>
